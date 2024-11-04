@@ -13,8 +13,8 @@ package sqlite3
 #cgo CFLAGS: -DSQLITE_ENABLE_ICU
 #cgo darwin,amd64 CFLAGS:  -I/usr/local/opt/icu4c/include
 #cgo darwin,amd64 LDFLAGS: -L/usr/local/opt/icu4c/lib
-#cgo darwin,arm64 CFLAGS:  -I/opt/homebrew/opt/icu4c/include
-#cgo darwin,arm64 LDFLAGS: -L/opt/homebrew/opt/icu4c/lib
+#cgo darwin,arm64 CFLAGS:  -I/opt/homebrew/opt/icu4c/include -I/opt/homebrew/opt/icu4c@75/include
+#cgo darwin,arm64 LDFLAGS: -L/opt/homebrew/opt/icu4c/lib -L/opt/homebrew/opt/icu4c@75/lib
 #cgo openbsd LDFLAGS: -lsqlite3
 */
 import "C"
