@@ -41,7 +41,7 @@ jobs:
         run: go-acc . -- -race -v -tags ""
 
       - name: 'Tags: default no-cgo'
-        run: CGO_ENABLED=0 go-acc . -- -race -v -tags ""
+        run: CGO_ENABLED=0 go-acc . -- -v -tags ""
 
       - name: 'Tags: libsqlite3'
         run: go-acc . -- -race -v -tags "libsqlite3"
@@ -95,7 +95,7 @@ jobs:
         shell: msys2 {0}
 
       - name: 'Tags: default no-cgo'
-        run: CGO_ENABLED=0 go build -race -v -tags ""
+        run: CGO_ENABLED=0 go build -v -tags ""
         shell: msys2 {0}
 
       - name: 'Tags: libsqlite3'
