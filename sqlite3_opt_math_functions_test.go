@@ -1,5 +1,5 @@
-//go:build sqlite_math_functions
-// +build sqlite_math_functions
+//go:build sqlite_math_functions && cgo
+// +build sqlite_math_functions,cgo
 
 package sqlite3
 

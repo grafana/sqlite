@@ -3,8 +3,8 @@
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
 
-//go:build !sqlite_omit_load_extension
-// +build !sqlite_omit_load_extension
+//go:build !sqlite_omit_load_extension && cgo
+// +build !sqlite_omit_load_extension,cgo
 
 package sqlite3
 

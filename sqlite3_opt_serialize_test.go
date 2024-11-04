@@ -1,5 +1,6 @@
-//go:build !libsqlite3 || sqlite_serialize
+//go:build (!libsqlite3 || sqlite_serialize) && cgo
 // +build !libsqlite3 sqlite_serialize
+// +build cgo
 
 package sqlite3
 

@@ -3,6 +3,9 @@
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
 
+//go:build cgo
+// +build cgo
+
 package sqlite3
 
 // You can't export a Go function to C and have definitions in the C
