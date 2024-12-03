@@ -1,5 +1,5 @@
-//go:build sqlite_column_metadata
-// +build sqlite_column_metadata
+//go:build sqlite_column_metadata && cgo
+// +build sqlite_column_metadata,cgo
 
 package sqlite3
 

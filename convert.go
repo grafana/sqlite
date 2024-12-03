@@ -6,6 +6,9 @@
 
 // Type conversions for Scan.
 
+//go:build cgo
+// +build cgo
+
 package sqlite3
 
 import (

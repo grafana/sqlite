@@ -4,8 +4,8 @@
 // Use of this source code is governed by an MIT-style
 // license that can be found in the LICENSE file.
 
-//go:build !windows && sqlite_app_armor
-// +build !windows,sqlite_app_armor
+//go:build !windows && sqlite_app_armor && cgo
+// +build !windows,sqlite_app_armor,cgo
 
 package sqlite3
 
